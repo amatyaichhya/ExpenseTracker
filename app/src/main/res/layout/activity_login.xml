@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbg"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_marginHorizontal="10dp"
+        android:inputType="text"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:drawablePadding="7dp"
+        android:drawableLeft="@drawable/account"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:layout_marginHorizontal="10dp"
+        android:drawablePadding="7dp"
+        android:drawableLeft="@drawable/passwordlock"
+        />
+
+    <CheckBox
+        android:id="@+id/rememberme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:buttonTint="#333"
+        android:text="Remember me"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_bg"
+        android:layout_marginHorizontal="10dp"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="Login"
+        android:textSize="20dp" />
+    <Button
+        android:id="@+id/google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_bg"
+        android:drawableStart="@drawable/ic_google_logo"
+        android:layout_marginHorizontal="10dp"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="Login with Google"
+        android:textSize="18dp" />
+
+</LinearLayout>

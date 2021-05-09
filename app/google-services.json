@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "884354036471",
+    "firebase_url": "https://kharcha-d4256.firebaseio.com",
+    "project_id": "kharcha-d4256",
+    "storage_bucket": "kharcha-d4256.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884354036471:android:5c392d0a3d2ed35e",
+        "android_client_info": {
+          "package_name": "com.dristi.kharcha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884354036471-oteno7kh5aoaqagin2tni9cc0lbbrvs2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXVkdgHCtuxw4aJDZpLFKqRTZu7n3hF08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884354036471-oteno7kh5aoaqagin2tni9cc0lbbrvs2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

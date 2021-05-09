@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_marginHorizontal="10dp"
+        android:maxLines="1"
+        android:inputType="text"
+        android:padding="10dp"
+        android:drawablePadding="7dp"
+        android:drawableLeft="@drawable/account" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:hint="Email"
+        android:padding="10dp"
+        android:drawablePadding="7dp"
+        android:drawableLeft="@drawable/email_white"
+        android:inputType="textEmailAddress"
+        android:layout_marginHorizontal="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:drawablePadding="7dp"
+        android:drawableLeft="@drawable/passwordlock"
+        android:layout_marginHorizontal="10dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmpass"
+        android:inputType="textPassword"
+        android:hint="Confirm password"
+        android:drawablePadding="7dp"
+        android:layout_marginHorizontal="10dp"
+        android:drawableLeft="@drawable/passwordlock"
+        android:padding="10dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/gender"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/button_bg"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="Sign Up"
+        android:textSize="20sp" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundblue"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/household"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Household"
+                        android:layout_margin="5dp"
+                        android:drawableLeft="@drawable/ic_household"
+                        android:drawablePadding="5dp"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:gravity="center"/>
+
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:visibility="gone"
+                        android:id="@+id/housechart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/eatingout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Eating-out"
+                        android:layout_margin="5dp"
+                        android:drawableLeft="@drawable/ic_eating_out"
+                        android:drawablePadding="5dp"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:gravity="center"/>
+
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:visibility="gone"
+                        android:id="@+id/eatingchart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/grocery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Grocery"
+                        android:layout_margin="5dp"
+                        android:drawableLeft="@drawable/ic_grocery"
+                        android:drawablePadding="5dp"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:gravity="center"/>
+
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:visibility="gone"
+                        android:id="@+id/grocerychart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/personal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Personal"
+                        android:layout_margin="5dp"
+                        android:drawableLeft="@drawable/ic_personal"
+                        android:drawablePadding="5dp"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:gravity="center"/>
+
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:visibility="gone"
+                        android:id="@+id/personalchart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/utilities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Utilities"
+                        android:layout_margin="5dp"
+                        android:drawableLeft="@drawable/ic_utilities"
+                        android:drawablePadding="5dp"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:gravity="center"/>
+
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:visibility="gone"
+                        android:id="@+id/utilitieschart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/medical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Medical"
+                        android:layout_margin="5dp"
+                        android:drawableLeft="@drawable/ic_medical"
+                        android:drawablePadding="5dp"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:gravity="center"/>
+
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:visibility="gone"
+                        android:id="@+id/medicalchart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Education"
+                        android:layout_margin="5dp"
+                        android:drawableLeft="@drawable/ic_education"
+                        android:drawablePadding="5dp"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:gravity="center"/>
+
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:visibility="gone"
+                        android:id="@+id/educationchart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/entertainment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Entertainment"
+                        android:layout_margin="5dp"
+                        android:drawableLeft="@drawable/ic_entertainment"
+                        android:drawablePadding="5dp"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:gravity="center"/>
+
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:visibility="gone"
+                        android:id="@+id/entertainmentchart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/clothing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clothing"
+                        android:layout_margin="5dp"
+                        android:drawableLeft="@drawable/ic_clothing"
+                        android:drawablePadding="5dp"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:gravity="center"/>
+
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:visibility="gone"
+                        android:id="@+id/clothingchart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/transportation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transportation"
+                        android:layout_margin="5dp"
+                        android:drawableLeft="@drawable/ic_transportation"
+                        android:drawablePadding="5dp"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:gravity="center"/>
+
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:visibility="gone"
+                        android:id="@+id/transportationchart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/shopping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shopping"
+                        android:layout_margin="5dp"
+                        android:drawableLeft="@drawable/ic_shopping"
+                        android:drawablePadding="5dp"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:gravity="center"/>
+
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:visibility="gone"
+                        android:id="@+id/shoppingchart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/others"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Others"
+                        android:layout_margin="5dp"
+                        android:drawableLeft="@drawable/savings"
+                        android:drawablePadding="5dp"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:gravity="center"/>
+
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:visibility="gone"
+                        android:id="@+id/otherschart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

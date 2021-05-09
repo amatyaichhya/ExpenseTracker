@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+
+            android:textColor="#2b1f1f"
+            android:textStyle="normal"
+            android:text="Kharcha is a mobile application which proovides a way for organizing, pre-planning, managing and tracking the daily income and expense of the uses as per their need to effectively keep record of the expenses for efficient use of their income or monthly allowance.This system enables the users to categorize their expenses for a better knowledge of where their income or allowance is being spent the most and this will help minimzing unnecessary spending and will help to efficiently use their money in a productive way."
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
